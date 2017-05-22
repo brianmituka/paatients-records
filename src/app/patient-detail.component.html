@@ -1,0 +1,36 @@
+<div *ngIf="patient">
+  <h2>{{patient.firstname}} {{patient.lastname}}'s details</h2>
+ <div><label>id: </label>{{patient.id}}</div>
+
+<!-- using ngModel to access data from the model -->
+  <div >
+    <label>first name:</label>
+    <input [(ngModel)]= "patient.firstname" placeholder="first name">
+
+  </div>
+  <div>
+    <label>last name:</label>
+    <input [(ngModel)]= "patient.lastname" placeholder="last name">
+
+  </div>
+  <div>
+    <label>DOB:</label>
+    <input [(ngModel)]= "patient.DOB" placeholder="dd/mm/yy" type="date">
+
+  </div>
+  <div>
+    <label>Tel:</label>
+    <input [(ngModel)]= "patient.Telephone" placeholder="telephone number">
+
+  </div>
+  <div>
+    <label>Email:</label>
+    <input [(ngModel)]= "patient.Email" placeholder="Email address" type="email">
+
+  </div>
+  <!-- save and back button -->
+  <button  (click)="goBack()">Back</button>
+  <button (click)="save()">Save</button>
+
+
+</div>

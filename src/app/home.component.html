@@ -1,0 +1,15 @@
+<h1>Welcome to the Patients Records</h1>
+
+<h3>Sample Patients(click to view details and edit)</h3>
+<div class="area area-pad">
+  <a *ngFor="let patient of patients" [routerLink]="['/detail', patient.id]" class="col-1-4">
+    <div class="detail">
+      <h4>{{patient.firstname}} {{patient.lastname}}</h4>
+
+    </div>
+</a>
+
+
+
+
+ </div>
