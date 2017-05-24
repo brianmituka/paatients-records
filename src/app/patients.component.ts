@@ -13,6 +13,7 @@ export class PatientsComponent implements OnInit {
   title = 'Patients Records';
   patients: Patient[];
   selectedPatient: Patient;
+  //constructor
   constructor(
     private router: Router,
     private patientService: PatientService) { };
