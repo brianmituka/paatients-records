@@ -6,7 +6,7 @@ label {
   font-weight: bold;
 }
 input {
-  height: 2em;
+  height: 1em;
   font-size: 1em;
   padding-left: .4em;
 }
@@ -26,4 +26,7 @@ button:disabled {
   background-color: #eee;
   color: #ccc;
   cursor: auto;
+}
+.pdetails{
+text-align: center;
 }
