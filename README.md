@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 ## About
-This is an application built with angular cli and it si used to manage the records of patients in an hospital.
+This is an application built with angular cli and it is used to manage the records of patients in an hospital.
 
 
 
