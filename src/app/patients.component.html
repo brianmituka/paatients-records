@@ -20,11 +20,11 @@
 <div class="add">
   <h2>Add a new patient</h2>
   <ul class="new">
-    <li><label>first name:</label><input #first /></li>
-    <li><label>last name:</label><input #second /></li>
-    <li><label>D.O.B:</label><input #birth /></li>
-    <li><label>Tel:</label><input #tel /></li>
-    <li>  <label>Email:</label><input #mail /></li>
+    <li><label>first name:</label><input #first placeholder="first name" /></li>
+    <li><label>last name:</label><input #second placeholder="last name" /></li>
+    <li><label>D.O.B:</label><input #birth placeholder="dd/mm/yy" type="date"/></li>
+    <li><label>Tel:</label><input #tel placeholder="telephone" /></li>
+    <li>  <label>Email:</label><input #mail  placeholder="Email Address"/></li>
   </ul>
 <!-- add and then clear the form -->
   <button (click)="add(first.value, second.value, birth.value, tel.value, mail.value); first.value=''; second.value=''; birth.value=''; tel.value=''; mail.value=''">ADD</button>
